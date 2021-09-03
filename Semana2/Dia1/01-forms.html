@@ -15,7 +15,9 @@
                 type="text" 
                 id="nombres"
                 placeholder="Ej. Juan Luis"
-                value="Jorge"
+                required
+                minlength="2"
+                maxlength="10"
             >
             <br>
             <label for="apellidos">Apellidos</label>
@@ -23,11 +25,13 @@
                 type="text" 
                 id="apellidos"
                 placeholder="Ej. Perez Santos"
+                required
+                pattern="[a-z]"
             >
             <br>
             <label for="email">email</label>
             <input 
-                type="text" 
+                type="email" 
                 id="email"
                 placeholder="usuario@dominio.com"
             >
@@ -44,6 +48,8 @@
                 type="number" 
                 id="edad"
                 placeholder="Ej. 18"
+                min="0"
+                max="140"
             >
             <br>
             <label for="genero">Género</label>
@@ -75,6 +81,42 @@
             Juegos de mesa
             <input type="checkbox" value="juegos" name="" id="">
             Música
+            <br>
+            <label for="">Ciudad: </label>
+            <select name="" id="">
+                <option selected disabled>Seleccione una opción</option>
+                <option value="AM">Amazonas</option>
+                <option value="AN">Ancash</option>
+                <option value="AP">Apurimac</option>
+                <option value="AR">Arequipa</option>
+                <option value="CU">Cusco</option>
+                <option value="LI">Lima</option>
+                <option value="PI">Piura</option>
+                <option value="TA">Tacna</option>
+            </select>
+            <br>
+            <label for="">Distritos</label>
+            <input list="distritos">
+            <datalist id="distritos">
+                <option value="Lima">Lima Cercado</option>
+                <option value="Ate">Ate</option>
+                <option value="Breña">Breña</option>
+                <option value="Pueblo Libre">Pueblo Libre</option>
+                <option value="San Miguel">San Miguel</option>
+                <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+            </datalist>
+            <br>
+            <label for="">Color</label>
+            <input type="color">
+            <br>
+            <label for="">Fecha de Nacimiento</label>
+            <input type="date">
+            <br><label for="">Biografía</label>
+            <textarea name="" id="" cols="20" rows="6"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" name="" id="">
+            <button>Click</button>
         </form>
     </header>
 </body>
