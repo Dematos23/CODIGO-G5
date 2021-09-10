@@ -1,0 +1,27 @@
+*{
+    border: 1px solid red;
+}
+
+header{
+    width: 400px;
+    height: 200px;
+}
+h1{
+    color: rebeccapurple;
+    width: 50%;
+    border: 1px solid blue;
+    height: 20%;
+}
+
+h2{
+    /* color: #RR GG BB */
+    color: #005dfc;
+}
+
+h3{
+    color: rgb(255, 30, 168);
+}
+
+p{
+    background-color: hsl(100, 100%, 50%);
+}
