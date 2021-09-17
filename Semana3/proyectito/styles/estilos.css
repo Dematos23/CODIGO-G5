@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-image: linear-gradient(45deg, #3dada4, #c71fe6);
+    color: white;
+}
+
+.contenedor{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    max-height: 40px;
+}
+
+button:hover{
+    background-color: white;
+    color: darkgrey;
+}
+
+.hero{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1, h5, div{
+    margin: 10px;
+}
+
+.hero h1{
+    font-size: calc(16px + 2vw);
+}
+
+.hero img{
+    max-width: 75vw;
+}
