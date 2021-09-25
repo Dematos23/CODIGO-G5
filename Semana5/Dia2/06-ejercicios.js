@@ -14,12 +14,12 @@ for(let i = 0; i < cantProductos; i++){
         case 2:
             leche++;
             break;
-        case 1:
+        case 3:
             galletas++;
             break;
         default:
-            alert("Nùmero erroneo")
-            i--
+            alert("Nùmero erroneo");
+            i--;
     }
 }
 
