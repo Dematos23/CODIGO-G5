@@ -23,6 +23,8 @@ let albumMusical = {
     fechaLanzamiento:"20/03/2020",
     genero:["Dream Pop","Drum and Bass"],
     canciones: [
-        
+        titulo: "Heartless",
+        duracion: 3.21,
+        autor: ["Abel Tesfaye",]
     ]
 }
