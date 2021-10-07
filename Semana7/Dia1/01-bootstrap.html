@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <style>
+        .oscuro{
+            background-color: rgb(255, 119, 69);
+        }
+        .claro{
+            background-color: aquamarine;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hola Mundo, con bootstrap</h1>
+    <div class="container">
+        <h2>Columnas</h2>
+        <div class="row">
+            <div class="col oscuro">1 columna</div>
+            <div class="col claro">2 columna</div>
+            <div class="col oscuro">3 columna</div>
+            <div class="col claro">4 columna</div>
+            <div class="col oscuro">5 columna</div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-8 oscuro">Columna de 8</div>
+            <div class="col-4 claro">Columna de 4</div>
+            <div class="col-3 oscuro">Columna de 3</div>
+        </div>
+        <h2>Columnas Responsivas con BreakPoints</h2>
+        <h3><code>col-xl-#</code></h3>
+        <h5>xl - las columnas colpsan si es menor a 1200px</h5>
+        <div class="row">
+            <div class="col-xl-6 oscuro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, officiis?
+            </div>
+            <div class="col-xl-6 claro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, officiis?
+            </div>
+        </div>
+        <h3><code>col-lg-#</code></h3>
+        <h5>lg- las columnas colpsan si es menor a 992px</h5>
+        <div class="row">
+            <div class="col-lg-7 oscuro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, officiis?
+            </div>
+            <div class="col-lg-3 claro">
+                Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </div>
+        </div>
+        <h3><code>col-md-#</code></h3>
+        <h5>md- las columnas colpsan si es menor a 768px</h5>
+        <div class="row">
+            <div class="col-md-7 oscuro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, officiis?
+            </div>
+            <div class="col-md-3 claro">
+                Lorem ipsum dolor sit, amet.
+            </div>
+            <div class="col-md-2 oscuro">
+                Lorem ipsum dolor sit.
+            </div>
+        </div>
+        <h3><code>col-sm-#</code></h3>
+        <h5>sm- las columnas colpsan si es menor a 572px</h5>
+        <div class="row">
+            <div class="col-sm-4 oscuro">Lorem ipsum dolor sit.</div>
+            <div class="col-sm-4 claro">Lorem ipsum dolor sit.</div>
+            <div class="col-sm-4 oscuro">Lorem ipsum dolor sit.</div>
+        </div>
+        <hr>
+        <h3>Combinar BreakPoints</h3>
+        <h5>Podemos combinar xl lg md sm, para que los elementos con la clase col ocupen diferentes espacios según el ancho</h5>
+        <div class="row">
+            <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 oscuro">Noticia Importante!</div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 claro">Noticia Buena!</div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-4 oscuro">Publicidad!</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script> -->
+
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
