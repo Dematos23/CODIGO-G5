@@ -1,8 +1,7 @@
-export default function FormProducto({value, actualizarInput}) {
-    console.log(value);
+export default function FormProducto({value, actualizarInput, manejarSubmit}) {
     return (
         <div>
-            <form>
+            <form onSubmit={(e) => {manejarSubmit(e)}}>
                 <div className="mb-3">
                     <label className="form-label">
                         Nombre producto
@@ -47,6 +46,8 @@ export default function FormProducto({value, actualizarInput}) {
                         }}
                         />
                 </div>
+
+                <button className="btn btn-primary" type="submit">Guardar</button>
             </form>
         </div>
     );

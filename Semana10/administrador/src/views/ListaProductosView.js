@@ -1,4 +1,5 @@
 import { useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 import { obtenerProductos } from "../services/productosService";
 
 export default function ListaProductosView() {
@@ -18,6 +19,7 @@ export default function ListaProductosView() {
     return (
         <div>
             <h1>Productos registrados</h1>
+            <Link to="/crearproducto" className="btn btn-primary my-2">Crear Producto</Link>
             <table className="table">
                 <thead>
                     <tr key="">
@@ -33,7 +35,9 @@ export default function ListaProductosView() {
                             <td>{nombre}</td>
                             <td>{descripcion}</td>
                             <td>{precio}</td>
-                            <td></td>
+                            <td>
+                                <button className="btn btn-info">Editar</button>
+                            </td>
                         </tr>
                     ))}
                 </tbody>
